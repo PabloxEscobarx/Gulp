@@ -1,0 +1,28 @@
+.navigation_wrapper {
+    @extend %flex_row;
+    justify-content: space-between;
+    .img {
+        padding: 26px 0 27px 90px;
+    }
+    nav {
+        ul {
+            @extend %flex;
+            li {
+                &:hover {
+                    box-shadow: 0px 10px 10px rgb(255 126 27 / 25%);
+                    a {
+                        color: $color_orange;
+                    }
+                }
+                a {
+                    font-size: $text_size_b;
+                    font-weight: 600;
+                    line-height: 28px;
+                    text-align: center;
+                    color: $color_blue;
+                    padding: 64px 50px;
+                }
+            }
+        }
+    }
+}
